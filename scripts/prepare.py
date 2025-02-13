@@ -23,7 +23,7 @@ print()
 
 if not path.exists(cfg.TARGET_DIR):
     print(f"Creating target directory: {cfg.TARGET_DIR}")
-    makedirs(cfg.TARGET_DIR, )
+    makedirs(cfg.TARGET_DIR)
     print()
 
 if not path.exists(cfg.OBJECTS_DIR):
@@ -45,7 +45,7 @@ if len(src_files) > 0:
     print()
 else:
     print("No source files found")
-    exit(1)
+    exit(0)
 
 obj_files = []
 for f in src_files:
